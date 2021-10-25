@@ -1,0 +1,32 @@
+<!doctype html>
+<!--
+Author:  Marcel
+Class:   Web & Distributed Programming
+Project: Map Mania v2
+Description: This is my Map Mania Version 2
+Credit: Vincent Cortesi helped me significantly with this project and I drew heavily from his source code with his permission.
+-->
+<html lang = en>
+
+  <head>
+    <title>Map Mania 2</title>
+    
+    <link rel="stylesheet" type="text/css" href="map-mania02.css" />
+    <script src="map-mania2.js"></script>
+    <h1>Directions for the game can be located here:<a href="instructions.html">Directions</a></h1>
+  </head>
+
+  <body onload="initApplication()">
+    <button id = "cheat" type = "button" onClick="cheat()">Cheat Button </button>
+    <p> Map Mania V2</p>
+    Hint : <input id="hint-id" type="text" value="hints" size="120" disabled><br><br>
+    Score: <input id="score-id" type="text" value="score" size="2" disabled> <br><br>
+
+    <div id="map"></div>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBz6N5MDviSkEhnZkDWlnW22A_AL0PlLrA&callback=initMap&v=weekly"
+      async
+    ></script>
+  </body>
+
+</html>
